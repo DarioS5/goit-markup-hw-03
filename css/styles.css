@@ -1,0 +1,180 @@
+:root{
+--color-primarybr:#4D5AE5;
+--color-pressed:#404BBF;
+--color-navy:#2E2F42;
+--color-text:#434455;
+--color-textbg:#FFFFFF;
+--color-back:#F4F4FD;
+}
+body{
+    color:var(--color-text);
+    background-color: var(--color-textbg);
+    font-family: Roboto, sans-serif;
+}
+a{
+    text-decoration: none;/* убираем подчеркивание*/
+}
+ul{
+    list-style-type: none;/*убираем точки */
+}
+.visualy-hidden {
+ margin: -1px;
+ white-space: nowrap;
+ clip-path: inset(100%);
+ clip: rect(0 0 0 0);
+ overflow: hidden;
+}
+.logo{
+    color:var(--color-primarybr);
+    font-family: Raleway,sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;/* размер высоты задаем в процентах 21/18*/
+    letter-spacing: 0.54px;/* задается в em rem 0.54/18*/
+    text-transform: uppercase;
+}
+.nav-web{
+    color:var(--color-navy);
+}
+.nav-link{
+    color:var(--color-navy);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.32px;/* em rem 0.32/16*/
+    line-height: 1.5;/*24/16*/
+}
+.nav-link:hover,
+.nav-link:focus{
+    color:var(--color-pressed);
+}
+.nav-adress{
+    color:var(--color-text);
+}
+.nav-adress:hover,
+.nav-adress:focus {
+    color: var(--color-pressed);
+}
+.adress-standart{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;/*24/16*/
+    letter-spacing: 0.32px;
+    font-style: normal;
+}
+.section-hero{
+    background-color:var(--color-navy);
+}
+.hero-title{
+    color:var(--color-textbg);
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;/*60/56*/
+    letter-spacing: 1.12px;
+    text-align: center;
+
+}
+.hero-button{
+    color:var(--color-textbg);
+    font-size: 16px;
+    background-color:var(--color-primarybr);
+    border: 0;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 1.5;/*24/16*/
+    letter-spacing: 0.64px;
+}
+.hero-button:hover,
+.hero-button:focus{
+    color:var(--color-textbg);
+    background-color:var(--color-pressed);
+}
+.headline{
+    color:var(--color-navy);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;/*24/20*/
+    letter-spacing: 0.4px;
+}
+.goals-text{
+    color:var(--color-text);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;/*24/16*/
+    letter-spacing: 0.32px;
+}
+.section-team{
+    background-color:var(--color-back);
+}
+.team{
+    color:var(--color-navy);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;/*40/36*/
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+.team-card{/* У пункті списку в класі задано стиль background-color: #FFFFFF для визначення фону*/
+    background-color: var(--color-textbg);
+}
+.name-team{
+color:var(--color-navy);
+font-size: 20px;
+font-weight: 500;
+line-height: 1.2;
+letter-spacing: 0.4px;
+text-align: center;
+}
+.text-team{
+    color:var(--color-text);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+}
+.our-portfolio{
+    color:var(--color-navy);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.function{
+    color:var(--color-navy);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+}
+.function-text{
+    color:var(--color-text);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+}
+.footer{
+    background-color:var(--color-navy);
+}
+.f-studio{
+    color: var(--color-back);
+
+}
+.f-logo{
+    font-family: Raleway,sans-serif;
+    color:var(--color-primarybr);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.54px;
+}
+.f-text{
+    color:var(--color-back);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+}
