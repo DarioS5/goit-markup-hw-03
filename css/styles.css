@@ -10,12 +10,21 @@ body{
     color:var(--color-text);
     background-color: var(--color-textbg);
     font-family: Roboto, sans-serif;
+    box-sizing: border-box;
 }
+*,*::before,*::after
+{
+    box-sizing: border-box;}/*почитать !*/
 a{
     text-decoration: none;/* убираем подчеркивание*/
 }
 ul{
     list-style-type: none;/*убираем точки */
+    margin:  0;
+    padding: 0;
+}
+p,h1,h2,h3,h4,h5,h6{
+    margin:0;
 }
 .visualy-hidden {
  margin: -1px;
@@ -23,6 +32,44 @@ ul{
  clip-path: inset(100%);
  clip: rect(0 0 0 0);
  overflow: hidden;
+}
+.conteiner{
+    width: 1752px;
+    margin:0 auto;/*центрування блочних элементов*/
+    padding: 0 32px;/*відступи справа і зліва 0-вертикальні 32 горизонт*/
+}
+.section{
+    padding: 60px 0;
+}
+.header{
+    padding: 24px 0 24px;
+}
+.header-inner{
+    display: flex;
+    justify-content: space-between;/*определяет,
+        как браузер распределяет пространство между и вокруг элементов контента вдоль главной оси flex,space-between — расстояния между соседними элементами одинаковые,
+            между элементами и краями флекс-контейнера отступов нет*/
+            align-items: center;
+            gap:76px;
+}
+.header-nav{
+    display:flex;
+    align-items: center;
+    flex-grow: 1;
+}
+.header-adress{
+    display: flex;
+    gap:40px;
+}
+.adress-list{
+    display: flex;
+    gap:40px;/*отспут между 2 элементами*/
+}
+.header-menu {
+    display: flex;
+    gap:40px;
+    flex-grow: 1;/*рост элементов  разрешение для */
+    justify-content: center;
 }
 .logo{
     color:var(--color-primarybr);
@@ -32,6 +79,8 @@ ul{
     line-height: 1.17;/* размер высоты задаем в процентах 21/18*/
     letter-spacing: 0.54px;/* задается в em rem 0.54/18*/
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
 }
 .nav-web{
     color:var(--color-navy);
@@ -42,6 +91,10 @@ ul{
     font-weight: 500;
     letter-spacing: 0.32px;/* em rem 0.32/16*/
     line-height: 1.5;/*24/16*/
+    display: inline-block;
+    padding:24px 0 24px;
+
+    
 }
 .nav-link:hover,
 .nav-link:focus{
@@ -61,17 +114,30 @@ ul{
     letter-spacing: 0.32px;
     font-style: normal;
 }
-.section-hero{
+.hero-inner{
+    padding:188px 472px 292px;
     background-color:var(--color-navy);
 }
+
 .hero-title{
+    width: 496px;/*максимальная ширина*/
     color:var(--color-textbg);
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;/*60/56*/
     letter-spacing: 1.12px;
     text-align: center;
-
+    margin-bottom: 38px;/*растояние между заголовком и кнопкой*/
+    margin:0 auto;/*текс по средине*/
+    
+}
+.hero-button-inner{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 48px;
+    gap:10px;
 }
 .hero-button{
     color:var(--color-textbg);
@@ -82,18 +148,37 @@ ul{
     font-weight: 500;
     line-height: 1.5;/*24/16*/
     letter-spacing: 0.64px;
+    padding: 16px 32px;
+
+    
+
 }
 .hero-button:hover,
 .hero-button:focus{
     color:var(--color-textbg);
     background-color:var(--color-pressed);
 }
+.section-goals{
+    display: flex;
+    padding: 120px 156px;
+}
+.goals-inner-list{
+display: flex;
+gap:24px;
+}
+.goals-inner-element{
+    display: flex;
+    gap:8px;
+    flex-direction: column;
+}
+
 .headline{
     color:var(--color-navy);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;/*24/20*/
     letter-spacing: 0.4px;
+    margin-bottom: 8px;
 }
 .goals-text{
     color:var(--color-text);
@@ -104,6 +189,7 @@ ul{
 }
 .section-team{
     background-color:var(--color-back);
+    display:flex;
 }
 .team{
     color:var(--color-navy);
@@ -114,8 +200,22 @@ ul{
     letter-spacing: 0.72px;
     text-transform: capitalize;
 }
+.team-card-list{
+    display:flex;
+    gap:24px;
+}
 .team-card{/* У пункті списку в класі задано стиль background-color: #FFFFFF для визначення фону*/
     background-color: var(--color-textbg);
+    display: flex;
+    width: 264px;
+    flex-direction: column;
+}
+.team-card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0;
 }
 .name-team{
 color:var(--color-navy);
